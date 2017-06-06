@@ -73,7 +73,7 @@ var letterInWord = function(){
     console.log("wrong letter" + wrongLetters);
     wrongGuess++;
     var hangman = document.getElementById("hangman");
-    hangman.src = "http://www.writteninpencil.de/Projekte/Hangman/hangman" + wrongGuess + ".png";
+    hangman.src = "../Hangman-Game/assets/images/hangman" + wrongGuess + ".png";
   }
   
   var wins = 0;
@@ -115,7 +115,7 @@ function init(){
 //start a new game 
 function newGame() {
     
-    
+    hangman.src = "../Hangman-Game/assets/images/hangman0.png";
     var total = document.getElementById("winTotal").value;
 
     var listOfWords = [
