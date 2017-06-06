@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game</title>
+  <script type="text/javascript" src="../Hangman-Game/assets/javascript/game.js"></script>
+  <link rel="stylesheet" type="text/css" href="../Hangman-Game/assets/css/style.css">
+</head>
+<body>
+    <div>
+      <h1>Hangman Game</h1>
+    </div>
+    <div>
+      <h1>Press Any Key To Get Started!</h1>
+    </div>
+    <div>
+      <h2>Wins: <input id="winTotal" value="0"></input></h2>
+    </div>
+    <p id="dashLine"></p>
+    <div>
+      <h2>Current Word</h2>
+    </div>
+    <form name="guessForm">
+    <input name="yourGuess" id="yourGuess" type="hidden" size="5" maxlength="1">
+    <!--<input name="ratebutton" type="button" value="Guess" onClick="letterInWord()">-->
+    <h3><p id="notInWord">Letters Already Guessed:</p></h3>
+    <img src="http://www.writteninpencil.de/Projekte/Hangman/hangman0.png" id="hangman"><br />
+    <input name="refresh" type="button" value="New Game" onClick="location.reload()">
+    </form>
+</body>
+</html>
+
